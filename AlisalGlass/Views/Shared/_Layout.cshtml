@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - The World’s Most Intelligent Windows</title>
+    @Styles.Render("~/Content/css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <div class="navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })*@
+                <div class="nav-logo">
+                    <a href="/" class="cc-active">
+                        <img src="/assets/img/svg/logo/view-logo.svg" alt="ALISAL | Dynamic Glass">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="sub" href="/product/">
+                            Product
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="/product/">Overview</a>
+                            </li>
+                            <li>
+                                <a href="/product/how-it-works/">
+                                    How it works
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="sub " href="/solutions/">Solutions</a>
+                        <ul>
+                            <li>
+                                <span class="head">Building Types</span>
+                                <ul>
+                                    <li><a href="/solutions/buildings-types/commercial-office/">Commercial Office</a></li>
+                                    <li><a href="/solutions/buildings-types/education/">Education</a></li>
+                                    <li><a href="/solutions/buildings-types/healthcare/">Healthcare</a></li>
+                                    <li><a href="/solutions/buildings-types/multifamily/">Multifamily</a></li>
+                                </ul>
+                            </li>
+                            @*<li>
+                                    <span class="head">Project Role</span>
+                                    <ul>
+                                        <li><a href="/solutions/project-role/architect/">Architect</a></li>
+                                        <li><a href="/solutions/project-role/developer/">Developer</a></li>
+                                        <li><a href="/solutions/project-role/occupant/">Occupant</a></li>
+                                    </ul>
+                                </li>*@
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/portfolio/">
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/resources/">Resources</a>
+                        <ul>
+                            <li><a href="/resources/">Overview</a></li>
+                            <li><a href="/resources/index.html?c=product-guides#list">Guides</a></li>
+                            <li><a href="/resources/index.html?c=tech-specs#list">Tech specs</a></li>
+                            <li><a href="/resources/index.html?c=literature#list">Literature</a></li>
+                            <li><a href="/videos">Videos</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/company/">Company</a>
+                        <ul>
+                            <li><a href="/company/">Overview</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/company/newsroom">Newsroom</a></li>
+                            <li><a href="/company/careers">Careers</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </li>
+
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                </ul>
+                <a href="/contact" class="button" id="contact-nav">Contact</a>
+
+                @*@Html.Partial("_LoginPartial")*@
+            </div>
+        </div>
+    </div>
+    <div>
+        @*class="container body-content"*@
+        @RenderBody()
+        <hr />
+        <footer class="footer-container">
+            @*<p>&copy; Copyright @DateTime.Now.Year AlisalGlass, Inc. All Rights Reserved.</p>*@
+
+            <div class="grid-container">
+                <nav aria-label="You are here:" role="navigation">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="/" class="cc-active"><img src="/assets/img/svg/logo/view-logo-small.svg" alt="Alisal"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav role="navigation" class="nav-footer--main">
+                    <ul>
+                        <li>
+                            <a href="/product/">Product</a>
+                            <ul>
+                                <li><a href="/product/">Overview</a></li>
+                                <li><a href="/product/how-it-works/">How it works</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/solutions/">Solutions</a>
+                            <ul>
+                                <li><a href="/solutions/buildings-types/commercial-office/">Commercial Office</a></li>
+                                <li><a href="/solutions/buildings-types/education/">Education</a></li>
+                                <li><a href="/solutions/buildings-types/healthcare/">Healthcare</a></li>
+                                <li><a href="/solutions/buildings-types/multifamily/">Multifamily</a></li>
+                                <li><a href="/solutions/project-role/architect/">Architect</a></li>
+                                <li><a href="/solutions/project-role/developer/">Developer</a></li>
+                                <li><a href="/solutions/project-role/occupant/">Occupant</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/portfolio/">Portfolio</a>  </li>
+                        <li>
+                            <a href="/resources/">Resources</a>
+                            <ul>
+                                <li><a href="/resources/index.html?c=product-guides">Guides</a></li>
+                                <li><a href="/resources/index.html?c=tech-specs">Tech specs</a></li>
+                                <li><a href="/resources/index.html?c=literature">Literature</a></li>
+                                <li><a href="/videos">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/company/">Company</a>
+                            <ul>
+                                <li><a href="/company/">Company</a></li>
+                                <li><a href="/company/index.html#people">People</a></li>
+                                <li><a href="/company/index.html#manufacturing">Manufacturing</a></li>
+                                <li><a href="/company/index.html#news-and-press">News and press</a></li>
+                                <li><a href="/company/index.html#events">Events</a></li>
+                                <li><a href="/company/index.html#careers">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="footer-contact">
+                                <a href="/contact/">Contact Us</a>
+                                <br>
+                                <br>
+                                <span class="fa fa-phone"></span>
+                                <a href="tel:+84999999999"></a>
+                                <br>
+                                <br>
+                                <a href="/blog/">Blog</a>
+                            </div>
+                            <ul class="footer-socials">
+                                <li>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="footer-copyright">&copy; Copyright @DateTime.Now.Year AlisalGlass, Inc. All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
