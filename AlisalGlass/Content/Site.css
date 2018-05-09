@@ -57,7 +57,11 @@ input[type="checkbox"].input-validation-error {
     font-weight: 400;
 }
 
-.navbar-nav>li a {
+li {
+    list-style: none;
+}
+
+.navbar-collapse ul li {
     z-index: 1;
     color: #FFF !important;
     font-family: Gotham A,Gotham B,sans-serif;
@@ -67,7 +71,7 @@ input[type="checkbox"].input-validation-error {
     text-decoration: none;
 }
 
-.navbar-nav>li>ul {
+.navbar-collapse ul li ul {
     display: none;
     white-space: nowrap;
     padding: 15px 15px 0;
@@ -79,7 +83,7 @@ input[type="checkbox"].input-validation-error {
     background-color: rgba(155,155,155,.8);
 }
 
-.navbar-nav>li .sub:hover .navbar-nav>li>ul {
+.navbar-collapse ul li:hover ul {
     display: block;
 }
 
