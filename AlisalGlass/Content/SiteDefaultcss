@@ -1,0 +1,412 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*---------------------------------------------------------*/
+body {
+    padding-top: 0;
+    /*padding-bottom: 20px;*/
+}
+
+header.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    height: 8rem;
+    z-index: 11;
+}
+
+header.nav .nav-main {
+    position: absolute;
+    list-style: none;
+    top: 19px;
+    top: 1.9rem;
+    left: 380px;
+    left: 38rem;
+}
+
+header.nav .nav-main>li {
+    float: left;
+    display: block;
+    position: relative;
+    padding: 10px 14px;
+    padding: 1rem 1.4rem;
+}
+header.nav .nav-main>li>ul {
+    display: none;
+    white-space: nowrap;
+    padding: 15px 15px 0;
+    padding: 1.5rem 1.5rem 0;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    top: 4.5rem;
+    background-color: rgba(155,155,155,.8);
+}
+header.nav .nav-main>li>ul li {
+    float: initial;
+    padding-bottom: 8px;
+    padding-bottom: .8rem;
+}
+
+header.nav .nav-main>li a {
+    z-index: 1;
+    color: #FFF;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+header.nav .nav-main>li:nth-child(2) ul>li {
+    float: left;
+    position: relative;
+    width: 180px;
+    width: 18rem;
+}
+header.nav .nav-main>li:nth-child(2) ul {
+    width: 390px;
+    width: 39rem;
+    height: 175px;
+    height: 17.5rem;
+    margin-left: -40px;
+}
+header.nav .nav-main>li>ul li {
+    float: initial;
+    padding-bottom: 5px;
+    padding-bottom: .5rem;
+}
+header.nav .nav-main>li>ul li ul {
+    margin-top: 10px;
+    margin-top: 1rem;
+}
+header.nav .nav-main>li>ul li .head {
+    font-weight: 700;
+    color: white;
+    border-bottom: 1px solid #FFF;
+    border-bottom: .1rem solid #FFF;
+    width: 160px;
+    width: 16rem;
+    display: block;
+    padding-bottom: 10px;
+    padding-bottom: 1rem;
+}
+
+header.nav .nav-main>li:hover ul {
+    display: block;
+}
+#contact-nav {
+    position: absolute;
+    right: 80px;
+    right: 8rem;
+    top: 7px;
+    top: 0.7rem;
+    width: auto;
+    padding-left: 24px;
+    padding-left: 2.4rem;
+    padding-right: 24px;
+    padding-right: 2.4rem;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+}
+
+header.nav .nav-main>li:hover {
+    background-color: rgba(155,155,155,.8);
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+.footer-container {
+    background: #75787b;
+    color: #FFF;
+}
+
+.nav-footer--main ul li {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 700;
+    float: left;
+    width: calc(100%/6);
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+
+.nav-footer--main ul li ul li {
+    width: 100%;
+    margin-bottom: 13px;
+    margin-bottom: 1.3rem;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    float: none;
+}
+
+.footer-copyright {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+#home-welcome {
+    width: 100%;
+    max-height: 730px;
+    max-height: 73rem;
+    height: 80vh;
+    background-color: #4a4a4a;
+    position: relative;
+}
+
+.img-hero, .movie-hero, .js-carousel-hero {
+    width: 100%;
+    height: 100%;
+}
+
+.img-hero:not(.js-carousel-hero), .movie-hero:not(.js-carousel-hero), .js-carousel-hero:not(.js-carousel-hero) {
+    position: absolute;
+}
+
+#home-welcome .grid-container {
+    position: relative;
+    height: 100%;
+    margin-top: -20px; 
+}
+
+.movie-hero iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+#home-welcome #home-welcome-message {
+    position: relative;
+    top: 45%;
+    left: 0;
+    text-align: center;
+}
+
+#home-welcome #home-welcome-message h1 {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    font-size: 6.4rem;
+    line-height: 60px;
+    line-height: 6rem;
+    margin-bottom: 40px;
+    margin-bottom: 4rem;
+    color: #FFF;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.5);
+}
+
+
+.footer-container ul.breadcrumbs {
+    list-style: none;
+    width: 100%;
+    padding-top: 20px;
+    padding-top: 2rem;
+    padding-bottom: 17.5px;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid #FFF;
+    border-bottom: .1rem solid #FFF;
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+}
+.footer-container ul.breadcrumbs li {
+    float: left;
+    position: relative;
+    padding-right: 20px;
+    padding-right: 2rem;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+.footer-container ul.breadcrumbs li a {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    text-decoration: none;
+}
+.nav-footer--main {
+    margin-bottom: 132px;
+    margin-bottom: 13.2rem;
+}
+.footer-copyright {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 700;
+    color: #FFF;
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+ul.footer-legal {
+    display: inline-block;
+    margin-left: 40px;
+    margin-left: 4rem;
+}
+.nav-footer--main ul li {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 700;
+    float: left;
+    width: calc(100%/6);
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #FFF;
+}
+.nav-footer--main ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+.nav-footer--main ul li ul {
+    margin-top: 13px;
+    margin-top: 1.3rem;
+    margin-left: -40px;
+}
+.nav-footer--main ul li ul li {
+    width: 100%;
+    margin-bottom: 13px;
+    margin-bottom: 1.3rem;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    float: none;
+}
+ul.footer-legal li a {
+    color: inherit;
+    text-decoration: none;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+.button {
+    display: inline-block;
+    position: relative;
+    margin: 0 4px;
+    margin: 0 .4rem;
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 36px;
+    line-height: 3.6rem;
+    height: 36px;
+    height: 3.6rem;
+    width: 170px;
+    width: 17rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 1;
+    background-color: rgba(255,255,255,.4);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+#home-welcome #home-welcome-message .button {
+    text-align: center;
+    padding: 0;
+}
+
+.button.blue {
+    background-color: rgba(52,101,127,.8);
+}
+
+.button:visited {
+    color: #FFF;
+}
+
+header:not(.nav) h2:not(.override), header:not(.nav) h3:not(.override) {
+    font-family: Gotham A,Gotham B,sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 34px;
+    line-height: 3.4rem;
+    color: #34657f;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home-new {
+    background-color: #8cc3da;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-bottom: 4rem;
+}
+
+#home-why {
+    background-color: #d4e1e5;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-bottom: 8rem;
+}
