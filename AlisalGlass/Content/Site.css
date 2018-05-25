@@ -11111,10 +11111,14 @@ header.nav .nav-main > li:hover {
 }
 
 header.nav .nav-main > li:nth-child(2) ul {
-    width: 400px;
+    /*width: 400px;
     width: 40rem;
     height: 165px;
-    height: 16.5rem;
+    height: 16.5rem;*/
+    width: 114px;
+    width: 11.4rem;
+    height: 75px;
+    height: 7.5rem;
 }
 
     header.nav .nav-main > li:nth-child(2) ul > li {
